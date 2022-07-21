@@ -15,19 +15,56 @@
             "center": {
                 "type": "hotelplan-content-instances",
                 "config": {
+                    "options": {
+                        "defaultSort": "_system.modified_on.ms"
+                    },                    
                     "replace": true,
                     "chrome": false,
                     "buttons": [],
-                    "columns": [
-                        {
-                            "title": "Content",
-                            "key": "titleDescription"
-                        }
-                    ],
+                    "columns": [{
+                        "title": "Content",
+                        "key": "titleDescription"
+                    }],
                     "icon": true,
                     "checkbox": true,
                     "loader": "gitana",
-                    "actions": true
+                    "actions": true,
+                    "selectorGroups": {
+                        "multi-documents-action-selector-group": {
+                            "actions": []
+                        },
+                        "sort-selector-group": {
+                            "fields": [{
+                                "key": "modifiedOn",
+                                "title": "Modified On",
+                                "field": "_system.modified_on.ms"
+                            }, {
+                                "key": "createdOn",
+                                "title": "Created On",
+                                "field": "_system.created_on.ms"
+                            }, {
+                                "key": "title",
+                                "title": "Title",
+                                "field": "title"
+                            }, {
+                                "key": "description",
+                                "title": "Description",
+                                "field": "description"
+                            }, {
+                                "key": "createdBy",
+                                "title": "Created By",
+                                "field": "_system.created_by"
+                            }, {
+                                "key": "modifiedBy",
+                                "title": "Modified By",
+                                "field": "_system.modified_by"
+                            }, {
+                                "key": "size",
+                                "title": "Size",
+                                "field": "_system.attachments.default.length"
+                            }]
+                        }
+                    }
                 }
             }
         }
