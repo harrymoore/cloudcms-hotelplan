@@ -16,7 +16,8 @@
                 "type": "hotelplan-content-instances",
                 "config": {
                     "options": {
-                        "defaultSort": "_system.modified_on.ms"
+                        "defaultSort": "_system.modified_on.ms",
+                        "defaultSortDirection": -1
                     },                    
                     "replace": true,
                     "chrome": false,
