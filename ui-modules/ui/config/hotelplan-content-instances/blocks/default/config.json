@@ -17,7 +17,7 @@
                 "config": {
                     "options": {
                         "defaultSort": "_system.modified_on.ms",
-                        "defaultSortDirection": -1
+                        "defaultSortDirection": 1
                     },                    
                     "replace": true,
                     "chrome": false,
